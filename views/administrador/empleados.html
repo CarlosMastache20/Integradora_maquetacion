@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf81469513.js" crossorigin="anonymous"></script>
+    <title>Administracion | Reportes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/solteca.png" class="img2" alt="" width="30" height="26">
+            </a>
+            <a class="navbar-brand" href="#" style="color: white;">La Solteca</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <img src="../img/user.jpg" alt="" class="img3">
+                        <li class="nav-item">
+
+                            <a class="nav-link disabled  mr-sm-2" href="#" style="color: white;"> Juana Martínez Méndez </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2" style="font-size: 18px; font-weight: bold;">
+            </div>
+            <div class="col-sm-8 text-center" style="font-size: 23px; font-weight: bold; color: #0B62A5;">
+                Lista de Empleados
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn" data-toggle="modal" data-target="#AgregarEmpleado" style="border-radius: 50px; background-color: #0B62A5; color: white; width: 170px; height: 32px; font-weight: bold; font-size: 13px;"><i class="fa fa-plus" aria-hidden="true"></i>  Agregar Empleado</button>
+
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-bordered" style="width: 1100px; height: 400px; border: red;">
+                        <thead style="font-weight: bold; " class="text-center">
+                            <tr>
+                                <th style="vertical-align: middle;">ID</th>
+                                <th style="vertical-align: middle;">Nombre(s)</th>
+                                <th style="vertical-align: middle;">Apellido <br>Paterno</th>
+                                <th style="vertical-align: middle;">Apellido <br>Materno</th>
+                                <th style="vertical-align: middle;">Telefono</th>
+                                <th style="vertical-align: middle;">Turno</th>
+                                <th style="vertical-align: middle;">Sucursal</th>
+                                <th style="vertical-align: middle;">Puesto</th>
+                                <th style="vertical-align: middle;">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Omar </td>
+                                <td>Padilla</td>
+                                <td>Luis</td>
+                                <td>9516543298</td>
+                                <td>Matutino</td>
+                                <td>Oaxaca de Juarez</td>
+                                <td>Administrador</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#EditarEmpleado" type="button" style="border: none; background-color: white; color: gray;" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                    <button type="button" style="border: none; background-color: white; color: red;" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Carlos </td>
+                                <td>Zarate </td>
+                                <td>Mastache</td>
+                                <td>9517898765</td>
+                                <td>Matutino</td>
+                                <td>Puerto Escondido</td>
+                                <td>Taquillero</td>
+                                <td>
+                                    <button type="button" style="border: none; background-color: white; color: gray;" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                    <button type="button" style="border: none; background-color: white; color: red;" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Francisco</td>
+                                <td>Martinez</td>
+                                <td>Sanchez</td>
+                                <td>951654578</td>
+                                <td>Vespertino</td>
+                                <td>Oaxaca de Juarez</td>
+                                <td>Taquillero</td>
+                                <td>
+                                    <button type="button" style="border: none; background-color: white; color: gray;" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                    <button type="button" style="border: none; background-color: white; color: red;" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>Brenda</td>
+                                <td>Marcial</td>
+                                <td>Mendez</td>
+                                <td>9516544321</td>
+                                <td>Matutino</td>
+                                <td>Puerto Escondido</td>
+                                <td>Taquillero</td>
+                                <td>
+                                    <button type="button" style="border: none; background-color: white; color: gray;" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                    <button type="button" style="border: none; background-color: white; color: red;" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>Hellen</td>
+                                <td>Lucas</td>
+                                <td>Jimenez</td>
+                                <td>9516544531</td>
+                                <td>Matutino</td>
+                                <td>Puerto Escondido</td>
+                                <td>Taquillero</td>
+                                <td>
+                                    <button type="button" style="border: none; background-color: white; color: gray;" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                    <button type="button" style="border: none; background-color: white; color: red;" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+
+        <!-- Modal Agregars -->
+        <div class="modal fade" id="AgregarEmpleado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+
+                    <div class="modal-header " style="background-color:#0B62A5; color: white;">
+                        <h5 class="modal-title " id="exampleModalLongTitle">Agregar Empleado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Nombre</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control" placeholder="Nombre">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Apellido Paterno</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control" placeholder="Apellido Paterno">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Apellido Materno</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control" placeholder="Apellido Materno">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Telefono</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="number" class="form-control" min="10" max="10" placeholder="Telefono">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Turno</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option selected disabled hidden>Seleccione un tuno</option>
+                                                        <option>Matutino</option>
+                                                        <option>Vespertino</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Sucursal</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option selected disabled hidden>Seleccione una sucursal</option>
+                                                        <option>Oaxaca de Juarez</option>
+                                                        <option>Puerto Escondido</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Puesto</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option selected disabled hidden>Seleccione un puesto</option>
+                                                        <option>Administrador</option>
+                                                        <option>Taquillero</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+
+                                            </div>
+
+                                            <div class="col-7" style="padding-left: 30px;">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal" style="border-radius: 50px;  color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Cancelar</button>
+                                                <button type="submit" class="btn " style="border-radius: 50px; background-color: #0B62A5; color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Agregar</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Editar -->
+        <div class="modal fade" id="EditarEmpleado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+
+                    <div class="modal-header " style="background-color:#0B62A5; color: white;">
+                        <h5 class="modal-title " id="exampleModalLongTitle">Editar Empleado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Nombre</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input value="Omar" style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Apellido Paterno</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input value="Padilla" style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Apellido Materno</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input value="Luis" style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Telefono</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input value="9516543298" style="border-radius: 12px; border-color: #0B62A5;" type="number" class="form-control" min="10" max="10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Turno</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option >Matutino</option>
+                                                        <option selected="selected">Vespertino</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Sucursal</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option>Oaxaca de Juarez</option>
+                                                        <option>Puerto Escondido</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Puesto</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option>Administrador</option>
+                                                        <option>Taquillero</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+
+                                            </div>
+
+                                            <div class="col-8" style="padding-left: 30px;">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal" style="border-radius: 50px;  color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Cancelar</button>
+                                                <button type="submit" class="btn " style="border-radius: 50px; background-color: #0B62A5; color: white; width: 150px; height: 32px; font-weight: bold; font-size: 13px;">Guardar Cambios</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

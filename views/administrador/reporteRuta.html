@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Administracion | Reportes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/solteca.png" class="img2" alt="" width="30" height="26">
+            </a>
+            <a class="navbar-brand" href="#" style="color: white;">La Solteca</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <img src="../img/user.jpg" alt="" class="img3">
+                        <li class="nav-item">
+
+                            <a class="nav-link disabled  mr-sm-2" href="#" style="color: white;"> Juana Martínez Méndez </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2" style="font-size: 18px; font-weight: bold;">
+
+            </div>
+            <div class="col-sm-8 text-center" style="font-size: 25px; font-weight: bold;">
+                Venta Total del la ruta: <span style="font-weight: bold; color: #5cb85c;">$1225 </span>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-danger " style="border-radius: 50px;  color: white; width: 160px; height: 32px; font-weight: bold; font-size: 13px;"><i class="fa fa-plus" aria-hidden="true"></i> Generar Reporte</button>
+
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-1 col-form-label" style="font-weight: bold;">Fecha:</label>
+                    <div class="col-3">
+                        <input class="form-control" type="date" value="2021-03-15" id="example-date-input">
+                    </div>
+                    <label for="example-time-input" class="col-1 col-form-label" style="font-weight: bold;">Hora:</label>
+                    <div class="col-3">
+                        <input class="form-control" type="time" value="00:00:00" id="example-time-input">
+                    </div>
+                    <label for="example-time-input" class="col-1 col-form-label" style="font-weight: bold;">Ruta:</label>
+                    <div class="col-3">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Seleccione la ruta
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Oaxaca - Puerto Escondido</a>
+                                <a class="dropdown-item" href="#">Oaxaca - Rio Grande</a>
+                                <a class="dropdown-item" href="#">Puerto Escondido - Rio grande</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+            </div>
+
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-bordered" style="width: 1100px; height: 400px; border: red;">
+                        <thead style="font-weight: bold;" class="text-center">
+                            <tr>
+                                <th>Nº Boleto</th>
+                                <th>Nombre del pasajero</th>
+                                <th>Destino</th>
+                                <th>Importe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Omar Roberto Padilla</td>
+                                <td>Puerto Escondido</td>
+                                <td>$245.00</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>Omar Roberto Padilla</td>
+                                <td>Puerto Escondido</td>
+                                <td>$245.00</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>Omar Roberto Padilla</td>
+                                <td>Puerto Escondido</td>
+                                <td>$245.00</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>Omar Roberto Padilla</td>
+                                <td>Puerto Escondido</td>
+                                <td>$245.00</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>Omar Roberto Padilla</td>
+                                <td>Puerto Escondido</td>
+                                <td>$245.00</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+
+        <br><br><br><br><br><br><br>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

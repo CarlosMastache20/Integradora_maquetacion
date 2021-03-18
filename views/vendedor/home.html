@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home|Vendedor</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf81469513.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jqueryUI/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg nav1">
+        <a class="navbar-brand" href="#">
+            <img src="../img/solteca.png" class="img2" alt="" width="30" height="26">
+        </a>
+        <a class="navbar-brand" href="#" style="color: white;">La Solteca</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html" style="color: white;">Generar Venta <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reportes.html" style="color: white;">Ver reportes</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <img src="../img/user.jpg" alt="" class="img3">
+                    <li class="nav-item">
+
+                        <a class="nav-link disabled  mr-sm-2" href="#" style="color: white;"> Juana Martínez Méndez </a>
+                    </li>
+                </ul>
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+            </form>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="content-table horizontal" style="empty-cells: hide">
+                    <thead>
+                        <th>
+                            <div class="select-container">
+                                <form action="" class="calendario">
+                                    <label for="">Selecciona una Fecha</label>
+                                    <input type="date" id="fecha" name="fecha" value="2021-03-11" min="2021-03-10" max="2021-12-31">
+                                </form>
+                            </div>
+
+                        </th>
+                        <th>
+                            <div class="select-container">
+                                <div class="select">
+                                    <div class="selected-option">
+                                        <span class="select-value">Selecciona un origen <i class="fas fa-map-marker-alt"></i></span>
+                                        <span class="icon fas fa-caret-down"></span>
+                                    </div>
+                                    <div data-toggle="collapsed" class="options">
+                                        <div class="option">Oaxaca de Juarez, Oax <i class="fas fa-map-marker-alt"></i></div>
+                                        <d iv class="option">Puerto Escondido, Oax <i class="fas fa-map-marker-alt"></i> </div>
+
+                                </div>
+                            </div>
+
+                        </th>
+                        <th>
+                            <div class="select-container">
+                                <div class="select">
+                                    <div class="selected-option2">
+                                        <span class="select-value2">Selecciona un destino <i class="fas fa-map-marked-alt"></i></span>
+                                        <span class="icon fas fa-caret-down"></span>
+                                    </div>
+                                    <div data-toggle="collapsed" class="options2">
+                                        <div class="option2">Sola de Vega <i class="fas fa-map-marked-alt"></i></div>
+                                        <div class="option2">Rio grande <i class="fas fa-map-marked-alt"></i> </div>
+                                        <div class="option2">Puerto Escondido <i class="fas fa-map-marked-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </th>
+                        <th>
+                            <div class="select-container3">
+                                <div class="select3">
+                                    <div class="selected-option3">
+                                        <span class="select-value3">Horarios <br> <i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                        <span class="icon fas fa-caret-down"></span>
+                                    </div>
+                                    <div data-toggle="collapsed" class="options3">
+                                        <div class="option3">7:00 <i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                        <div class="option3">8:00 <i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                        <div class="option3">9:30 <i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                        <div class="option3">11:20 <i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="select-container4">
+                                <div class="select4">
+                                    <div class="selected-option4">
+                                        <span class="select-value4">Transporte <br> <i class="fas fa-bus">   </i></span>
+                                        <span class="icon fas fa-caret-down"></span>
+                                    </div>
+                                    <div data-toggle="collapsed" class="options4">
+                                        <div class="option4">Suburban <i class="fas fa-bus"></i></div>
+                                        <div class="option4">Autobus <i class="fas fa-bus"></i></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="select-container5">
+                                <div class="select5">
+                                    <div class="selected-option5">
+                                        <span class="select-value5">Tipo de Pasajero <i class="fa fa-user" aria-hidden="true"></i></span>
+                                        <span class="icon fas fa-caret-down"></span>
+                                    </div>
+                                    <div data-toggle="collapsed" class="options5">
+
+                                        <div class="option5">
+                                            <p> Niños</p>
+                                            <input type="button" value="-" id="moins" onclick="minus()">
+                                            <input type="text" size="1" value="1" id="count">
+                                            <input type="button" value="+" id="plus" onclick="plus()">
+                                        </div>
+                                        <div class="option5">
+                                            <p>Adultos</p>
+                                            <input type="button" value="-" id="moins" onclick="minus2()">
+                                            <input type="text" size="1" value="1" id="count2">
+                                            <input type="button" value="+" id="plus" onclick="plus2()"> </div>
+                                        <div class="option5">
+                                            <p>Tercera Edad</p>
+                                            <input type="button" value="-" id="moins" onclick="minus3()">
+                                            <input type="text" size="1" value="1" id="count3">
+                                            <input type="button" value="+" id="plus" onclick="plus3()">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="rcorners2">2</td>
+                            <td id="rcorners2">Sally</td>
+                            <td id="rcorners2">72,400</td>
+                            <td id="rcorners2">Students</td>
+                            <td id="rcorners2">88,110</td>
+                            <td id="rcorners2">dcode</td>
+                            <td id="rcorners3" style="border: hidden"><a href=""><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td id="rcorners2">2</td>
+                            <td id="rcorners2">Sally</td>
+                            <td id="rcorners2">72,400</td>
+                            <td id="rcorners2">Students</td>
+                            <td id="rcorners2">88,110</td>
+                            <td id="rcorners2">dcode</td>
+                            <td id="rcorners3" style="border: hidden"><a href=""><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <button class="boton1 " id="btn1">Información del Pasajero <i class="fa fa-user" aria-hidden="true"></i></button>
+
+
+            </div>
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-3">
+                <button href="" class="boton1" id="btn2">Generar ticket  <i class="fa fa-ticket" aria-hidden="true"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #0B62A5; color: white;">
+                    <h5 class="modal-title" id="exampleModalLabel">Información del pasajero</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Ingrese el nombre completo del pasajero</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el nombre del pasajero">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Teléfono del pasajero</label>
+                            <input type="number" max="10" min="10" class="form-control" id="exampleInputPassword1" placeholder="Telefono del pasajero">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" style="border-radius: 50px;   width: 150px; font-weight: bold;">Cerrar</button>
+                    <button type="button" class="btn btn-primary " style="border-radius: 50px; background-color: #0B62A5;  width: 150px; font-weight: bold;">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content ">
+                <div class="modal-body" style="background-color: #0B62A5; color: white; ">
+                    <p class=" text-center" style="font-size: 14px;" id="exampleModalLabel"> <span style="font-weight: bold;  font-size: 20px;">Autotransportes</span> <br> Regimen de cordinados
+                        <br> "La Solteca" <br> RFC: SCP6ST6904113R7 <br> Arista N° 116, Colonia Centro, Oaxaca de Juarez, <br> Oaxaca, Mexico. <br> Tel: 9515164059 <br> Taquillero: Perla Ruiz <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-4">
+                                    <span style="font-size: 15px;">Folio: 573936</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </p>
+
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4" style="font-size: 16px; font-weight: bold;">
+                                Origen
+                                <p style="font-size: 14px; font-weight: lighter; padding-top: 3px;">28/Feb/2021 7:00 <br> Oaxaca de Juarez</p>
+                            </div>
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4" style="font-size: 16px; font-weight: bold;">
+                                Destino
+                                <p style="font-size: 14px; font-weight: lighter; padding-top: 3px;">28/Feb/2021 16:00 <br> Puerto Escondido</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12" style="color: rgb(59, 59, 59); font-size: 15px;">
+                                Tipos de pasajeros:<span style="font-weight: bold;"> 01</span> Adultos
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12" style="color: rgb(59, 59, 59); font-size: 15px;">
+                                N° de Asientos: <span style="font-weight: bold;"> 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4" style="font-size: 15px; font-weight: lighter;">
+                                Subtotal:
+                            </div>
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4" style="font-size: 15px; font-weight: lighter;">
+                                $245.00
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4" style="font-size: 15px; font-weight: lighter;">
+                                Descuento:
+                            </div>
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4" style="font-size: 15px; font-weight: lighter;">
+                                - $0.00
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4" style="font-size: 15px; font-weight: lighter;">
+                                Total:
+                            </div>
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4" style="font-size: 15px; font-weight: lighter;">
+                                $245.00
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class=" modal-footer ">
+                    <button type="button " class="btn btn-danger" data-dismiss="modal" style="border-radius: 50px; width: 150px; font-weight: bold;">Cancelar</button>
+                    <button type="button " class="btn  btn-primary" style="border-radius: 50px; background-color: #0B62A5;  width: 150px; font-weight: bold;">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br><br>
+
+    <script src="script.js "></script>
+    <script src="contador.js "></script>
+    <script src="jquery/jquery-3.3.1.min.js "></script>
+    <script src="popper/popper.min.js "></script>
+    <script src="bootstrap4/js/bootstrap.min.js "></script>
+    <script src="jqueryUI/jquery-ui-1.12.1/jquery-ui.min.js "></script>
+    <script src="codigo.js "></script>
+
+
+
+
+</body>
+
+</html>

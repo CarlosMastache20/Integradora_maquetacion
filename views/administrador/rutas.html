@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf81469513.js" crossorigin="anonymous"></script>
+    <title>Administracion | Reportes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/solteca.png" class="img2" alt="" width="30" height="26">
+            </a>
+            <a class="navbar-brand" href="#" style="color: white;">La Solteca</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <img src="../img/user.jpg" alt="" class="img3">
+                        <li class="nav-item">
+
+                            <a class="nav-link disabled  mr-sm-2" href="#" style="color: white;"> Juana Martínez Méndez </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2" style="font-size: 18px; font-weight: bold;">
+            </div>
+            <div class="col-sm-8 text-center" style="font-size: 23px; font-weight: bold; color: #0B62A5;">
+                Rutas y Escalas
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <button type="button" class="btn" data-toggle="modal" data-target="#AgregarRuta" style="border-radius: 50px; background-color: #0B62A5; color: white; width: 170px; height: 32px; font-weight: bold; font-size: 13px;"><i class="fa fa-plus" aria-hidden="true"></i>  Agregar Ruta</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#AgregarEscala" style="border-radius: 50px; background-color: #0B62A5; color: white; width: 170px; height: 32px; font-weight: bold; font-size: 13px;"><i class="fa fa-plus" aria-hidden="true"></i>  Agregar Escala</button>
+                <button type="button" class="btn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" style="border-radius: 50px; background-color: #0B62A5; color: white; width: 170px; height: 32px; font-weight: bold; font-size: 13px;"><i class="fa fa-search" aria-hidden="true"></i> Modificar</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Oaxaca - San Pablo</a>
+                    <a class="dropdown-item" href="#">Oaxaca - Puerto Escondido</a>
+                    <a class="dropdown-item" href="#">Puerto Escondido - Rio Grande</a>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-bordered" style="width: 1100px; height: auto; border: red;">
+                        <thead style="font-weight: bold; " class="text-center">
+                            <tr>
+                                <th style="vertical-align: middle;">Origen</th>
+                                <th style="vertical-align: middle;">Destino</th>
+                                <th style="vertical-align: middle;">Precio</th>
+                                <th style="vertical-align: middle;">Tipo</th>
+                                <th style="vertical-align: middle; width: 130px;">Opciones</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Oaxaca de Juarez</td>
+                                <td>San Pablo Huixtepec</td>
+                                <td>$50.00</td>
+                                <td>Ruta</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#EditarRE" type="button" style="border: none; background-color: white; color: gray;" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                    <button type="button" style="border: none; background-color: white; color: red;" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+
+        <!-- Modal Agregar Ruta-->
+        <div class="modal fade" id="AgregarRuta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+
+                    <div class="modal-header " style="background-color:#0B62A5; color: white;">
+                        <h5 class="modal-title " id="exampleModalLongTitle">Agregar Ruta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Origen</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control" placeholder="Origen">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Destino</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control" placeholder="Destino">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Costo</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="number" class="form-control" min="3" max="4" placeholder="Precio ">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row">
+                                            <div class="col-5">
+
+                                            </div>
+
+                                            <div class="col-7" style="padding-left: 30px;">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal" style="border-radius: 50px;  color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Cancelar</button>
+                                                <button type="submit" class="btn " style="border-radius: 50px; background-color: #0B62A5; color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Agregar</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Agregar Escala-->
+
+        <div class="modal fade" id="AgregarEscala" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+
+                    <div class="modal-header " style="background-color:#0B62A5; color: white;">
+                        <h5 class="modal-title " id="exampleModalLongTitle">Agregar Escala</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Ruta</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option selected disabled hidden>Seleccione una ruta</option>
+                                                        <option >Oaxaca Centro - San Pablo Huixtepec</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Escala</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control" placeholder="Escala">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Costo</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input style="border-radius: 12px; border-color: #0B62A5;" type="number" class="form-control" min="50" max="2000" placeholder="Precio ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+
+                                            </div>
+
+                                            <div class="col-7" style="padding-left: 30px;">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal" style="border-radius: 50px;  color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Cancelar</button>
+                                                <button type="submit" class="btn " style="border-radius: 50px; background-color: #0B62A5; color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Agregar</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Editar R-E -->
+        <div class="modal fade" id="EditarRE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+
+                    <div class="modal-header " style="background-color:#0B62A5; color: white;">
+                        <h5 class="modal-title " id="exampleModalLongTitle">Editar Ruta - Escala</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Origen</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input value="Oaxaca" style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Destino</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input value="San Pablo Huixtepec" style="border-radius: 12px; border-color: #0B62A5;" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Precio</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input value="50.00" style="border-radius: 12px; border-color: #0B62A5;" type="number" class="form-control" min="50" max="1500">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-4" style="padding-top: 8px;">
+                                                    <label>Tipo</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <select class="form-control" style="border-radius: 12px; border-color: #0B62A5;">
+                                                        <option selected="selected" >Ruta</option>
+                                                        <option >Escala</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4">
+
+                                            </div>
+
+                                            <div class="col-8" style="padding-left: 30px;">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal" style="border-radius: 50px;  color: white; width: 110px; height: 32px; font-weight: bold; font-size: 13px;">Cancelar</button>
+                                                <button type="submit" class="btn" style="border-radius: 50px; background-color: #0B62A5; color: white; width: 150px; height: 32px; font-weight: bold; font-size: 13px;">Guardar Cambios</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <br><br><br><br><br><br><br>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
